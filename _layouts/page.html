@@ -99,7 +99,7 @@ layout: default
                 {% endif %}
 
                 <!-- Short About -->
-                <section class="visible-md visible-lg">
+                <!--<section class="visible-md visible-lg">
                     <hr><h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
                     <div class="short-about">
                         {% if site.sidebar-avatar %}
@@ -110,7 +110,7 @@ layout: default
                         {% if site.sidebar-about-description %}
                             <p>{{site.sidebar-about-description}}</p>
                         {% endif %}
-                        <!-- SNS Link -->
+                        &lt;!&ndash; SNS Link &ndash;&gt;
                         <ul class="list-inline">
                             {% if site.RSS %}
                             <li>
@@ -122,7 +122,7 @@ layout: default
                                 </a>
                             </li>
                             {% endif %}
-                            <!-- add jianshu add target = "_blank" to <a> by BY -->
+                            &lt;!&ndash; add jianshu add target = "_blank" to <a> by BY &ndash;&gt;
                             {% if site.jianshu_username %}
                             <li>
                                 <a target="_blank" href="https://www.jianshu.com/u/{{ site.jianshu_username }}">
@@ -183,22 +183,22 @@ layout: default
                                 </a>
                             </li>
                             {% endif %}
-                            
+
                         </ul>
                         {% if site.email %}
                             <p>✉️ {{site.email}}</p>
                         {% endif %}
                     </div>
-                </section>
+                </section>-->
                 <!-- Friends Blog -->
                 {% if site.friends %}
-                <hr>
-                <h5>FRIENDS</h5>
-                <ul class="list-inline">
-                    {% for friend in site.friends %}
-                        <li><a href="{{friend.href}}">{{friend.title}}</a></li>
-                    {% endfor %}
-                </ul>
+                <!--<hr>-->
+                <!--<h5>FRIENDS</h5>-->
+                <!--<ul class="list-inline">-->
+                    <!--{% for friend in site.friends %}-->
+                        <!--<li><a href="{{friend.href}}">{{friend.title}}</a></li>-->
+                    <!--{% endfor %}-->
+                <!--</ul>-->
                 {% endif %}
     		</div>
         {% endif %}
